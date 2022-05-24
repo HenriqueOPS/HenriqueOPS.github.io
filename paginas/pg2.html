@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     
     <title>Prog Fácil</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="header.css"/>
-    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="stylesheet.css"/>
     <link rel="shortcut icon" href="../img/shortcut icon.jpg"/>
  
 </head>
@@ -19,7 +17,7 @@
             <ul>
             <li class="listelemen"><a href="index.html">Home</a></li>
             <li class="listelemen"><a href="pg1.html">História HTML</a></li>
-            <li class="listelemen"><a href="pg2.html">Criador do HTML</a></li>
+            <li class="listelemen"><a href="pg2.html">Documento HTML</a></li>
             <li class="listelemen"><a href="pg3.html">Pricipais TAGS HTML</a></li>
             <li class="listelemen"><a href="pg4.html">Referencias HTML</a></li>
             <li class="listelemen"><a href="pg5.html">História CSS</a></li>
@@ -33,37 +31,135 @@
         </div>
 </header>
 <div style="margin: 100px; background-color: antiquewhite; margin-left: 10px; margin-right: 10px; height: 100%; ">
-   <!--Todo o codigo da página deve ser escrito aqui usar as tags section, article, main mais exemplos no link https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065#tag-main--> 
-   <h1>Tim Berners-Lee</h1>
-   <p><strong>Timothy John Berners-Lee </strong> KBE, OM, FRS (TimBL ou TBL) (Londres, 8 de junho de<br>
-       1955) é um físico britânico, cientista da computação e professor do MIT. É o criador da<br>
-       World Wide Web, tendo feito a primeira proposta para sua criação a 12 de março de<br>
-       1989.Em 25 de dezembro de 1990, com a ajuda de Robert Cailliau e um jovem<br>
-       estudante do CERN, implementou a primeira comunicação bem-sucedida entre um<br>
-       cliente HTTP e o servidor através da internet.</p>
-       <p>Berners-Lee é o diretor do World Wide Web Consortium (W3C), que supervisiona o <br>
-           desenvolvimento continuado da web. Também é o fundador da World Wide Web<br>
-           Foundation e é um pesquisador sênior e titular e fundador da cadeira de 3Com no<br>
-           Laboratório de Inteligência Artificial e Ciência da Computação do MIT (CSAIL). É um<br>
-           diretor da The Web Science Research Initiative (WSRI) e um membro do conselho<br>
-           consultivo do Centro de Inteligência Coletiva do MIT. Em abril de 2009, foi eleito como<br>
-           membro da Academia Nacional de Ciências dos Estados Unidos, sediada em<br>
-           Washington, D.C. Em 2011, foi nomeado como um membro do conselho de<br>
-           administração da Fundação Ford.</p>
-           <p>
-               Em 2004, Berners-Lee venceu o Millennium Technology Prize, o que lhe rendeu um milhão de euros.
-           </p>
-           <p>
-               Em 2017 foi agraciado pela Association for Computing Machinery (ACM) com o Prêmio Turing de 2016, considerado o "Nobel da Computação".
-           </p>
-           <a href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Para mais informações sobre Tim Berners<br></a>
+    <main>
+        <section>
+            <h1>Documento HTML</h1>
+            <br>
+            <h3>Sumário</h3>
+            <br>
+            <p>O elemento
+                <strong>
+                    HTML
+                </strong>
+                <span style="font-family: Courier New ;">&lt;html&gt;</span>
+                (ou
+                <em>HTML Root element</em>
+                ) epresenta a raiz de um HTML ou XHTML documento. Todos os outros elementos devem ser descendentes desse elemento.
+            </p>
+        </section>
+        <br>
+        <section>
+            <ul>
+                <li>
+                    <dfn><a href="https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/Content_categories"> Categorias de conteúdo</a></dfn> nenhuma
+                </li>
+                <li>
+                    <dfn>Conteúdo permitido</dfn>
+                    Um elemento
+                    &lt;<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/head">head</a>&gt;,
+                    seguido por um elemento
+                    &lt;<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/body">body</a>&gt;.
+                    
+                </li>
+                <li>
+                    <dfn>Omissão de tag</dfn>
+                    A tag inicial pode ser omitida se a primeira coisa dentro do elemento
+                    <code>&lt;html&gt;</code>
+                    &nbsp;não for um comentário.<br>
+                    a tag final pode ser omitida se o elemento <code>&lt;html&gt;</code>
+                    &nbsp;
+                    não for imediatamente seguido por um comentário, e conter um elemento
+                    &lt;<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/body">body</a>&gt;
+                    ou  que não está vazio, ou cuja tag inicial está presente.
+                </li>
+                <li>
+                    <dfn>Elementos pais permitidos</dfn>
+                    Como o elemento raiz do documento, ou qualquer fragmento de subdocumento é permitido em um documento composto.
+                </li>
+                <li>
+                    <dfn>DOOM interface</dfn>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLHtmlElement">HTMLhtmlElement <small>(en_US)</small></a> (Disponível apenas em inglês.)
+                </li>
+            </ul>
+        </section>
+        <br>
+        <section>
+            <h3>Atributos</h3>
+            <br>
+            <p>
+                <span style="line-height: 21px;">Esse elemento inclui os</span>
+                <a href="https://developer.mozilla.org/pt-BR/docs/web/html/global_attributes">atributos globais</a>
+            </p>
+            
+            <dl>
+                <dt id="mainfest">
+                    <a id="attr-mainfest" href="#attr-mainfest">
+                        <b>
+                            <code>mainfest</code>
+                        </b>
+                    </a>
+                </dt>
+                <dd>
+                    Especifica a URI de um recurso manifest indicando os recursos que devem ser carregados na memória local.
+                </dd>
+                <br>
+                <dt id="version">
+                    <a id="attr-version" href="#attr-version">
+                        <b>
+                            <code>version</code>
+                        </b>
+                    </a>
+                    <span class="notecard inline deprecated" title>
+                        <br>
+                        Descontinuado desde o
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML4.01</a>
+                    </span>
+                    <span title class="notecard inline obsolete">
+                        Obsoleto desde o <em>HTML5</em>
+                    </span>
+                </dt>
+                <dd>
+                    Especifica a versão da definição de tipo de documento HTML que governa o documento atual. Esse atributo não é necessário, porque é redundante com a informação de versão na declaração de tipo  de documento.
+                </dd>
+            </dl>
+        </section>
+        <br>
+        <section>
+            <h3>Exemplo</h3>
 
+            <p>O DOCTYPE usado no exemplo seguinte indica HTML5.</p>
+            <img src="/img/estrutura_HTML5.png" alt="html5 estrutura basica">
+        </section>
+        <br>
+        <section>
+            <h3>Notas</h3>
+
+            <p>
+                Desde que o elemento
+                &lt;<code>html</code>&gt;
+                seja o primeiro em documento outro que comenta, esse é chamado o elemento raiz. Embora essa tag possa ser implícita, ou não requerida, com&nbsp;
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a>, essa é requerida para ser aberta e fechada em <em>XHTML</em>
+            </p>
+        </section>
+        <br>
+        <section>
+            <h3>Compitibilidade com navegadores e dispositivos móveis</h3>
+
+            <ul>
+                <li><strong>Chrome</strong></li> Tem compatibilidade e suporte básico.
+                <li><strong>Firefox</strong></li> Tem compatibilidade e suporte básico.
+                <li><strong>Internet Explorer</strong></li> Tem compatibilidade e suporte básico.
+                <li><strong>Opera</strong></li> Tem compatibilidade e suporte básico.
+                <li><strong>Safari</strong></li> Tem compatibilidade e suporte básico.
+                <li><strong>Android</strong></li> Tem compatibilidade e suporte básico.
+                <li><strong>Firefox Mobile</strong></li> Tem compatibilidade e suporte básico.
+                <li><strong>Iphone</strong></li> Tem compatibilidade e suporte básico.
+                <li><strong>Opera Mobile</strong></li> Tem compatibilidade e suporte básico.
+                <li><strong>Safari Mobile</strong></li> Tem compatibilidade e suporte básico.
+                
+            </ul>
+        </section>
+    </main>
 </div>
-
-      
-
-
-
-    
 </body>
 </html>

@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
 
     <title>Prog Fácil</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="header.css"/>
-    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="stylesheet.css"/>
     <link rel="shortcut icon" href="../img/shortcut icon.jpg"/>
     
 </head>
@@ -19,7 +17,7 @@
             <ul>
             <li class="listelemen"><a href="index.html">Home</a></li>
             <li class="listelemen"><a href="pg1.html">História HTML</a></li>
-            <li class="listelemen"><a href="pg2.html">Criador do HTML</a></li>
+            <li class="listelemen"><a href="pg2.html">Documento HTML</a></li>
             <li class="listelemen"><a href="pg3.html">Pricipais TAGS HTML</a></li>
             <li class="listelemen"><a href="pg4.html">Referencias HTML</a></li>
             <li class="listelemen"><a href="pg5.html">História CSS</a></li>
@@ -33,7 +31,94 @@
         </div>
 </header>
 <div style="margin: 100px; background-color: antiquewhite; margin-left: 10px; margin-right: 10px; height: 100%; ">
-   <!--Todo o codigo da página deve ser escrito aqui usar as tags section, article, main mais exemplos no link https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065#tag-main--> 
+   
+    <main>
+        <section>
+            <h1>Referência HTML</h1>
+            <br>
+            <p>
+                Esta referência de
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a>
+                descreve todos os
+                <strong>elementos</strong>
+                e
+                <strong>atributos</strong>
+                do HTML,<br> incluindo 
+                <strong>Atributos globais</strong>
+                que se aplicam em todos os elementos.
+            </p>
+            <br>
+            <dl>
+                <dt id="referencia_de_elementos_do_html">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element">Referência de elementos do HTML</a>
+                </dt>
+                <dd>Esta página lista todos os elementos do HTML que são criados usando tags.</dd>
+                <h4>Exemplos</h4>
+                <ul>
+                    <li>&lt;<code><strong>base</strong></code>&gt;</li> O elemento HTML Base (&lt;base&gt;) especifica o endereço (URL) utilizada por<br> todos os endereços relativos contidos dentro de um documento.<br> Há um número máximo de 1 (um) elemento Base &lt;base&gt; do documento.
+
+                    <li>&lt;<code><strong>head</strong></code>&gt;</li> O elemento HTML &lt;head&gt; providencia informações gerais (metadados) sobre<br> o documento, incluindo seu título e links para scripts e folhas de estilos.
+
+                    <li>&lt;<code><strong>link</strong></code>&gt;</li> O Elemento HTML &lt;link&gt; especifica as relações entre o documento atual e<br> um recurso externo. Possíveis usos para este elemento incluem a definição de<br> uma estrutura relacional para navegação. Este elemento é mais usado para<br> vincular as folhas de estilo.
+                </ul>
+                <br>
+                <dt id="referência_de_atributos_do_html">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Attributes">Referência de atributos do HTML</a>
+                </dt>
+                <dd>Os elementos do HTML contêm atributos, que são valores adicionais que configuram os<br> elementos ou ajustam seu comportamento de várias formas, para que se adaptem aos<br> critérios dos usuários.</dd>
+                <h4>Exemplos</h4>
+                <ul>
+                    <li><strong>class</strong></li> Frequentemente usado com CSS para estilizar os elementos com propriedades comuns.
+
+                    <li><strong>href</strong></li> A URL de um recurso ligado.
+
+                    <li><strong>id</strong></li> Frequentemente usado com CSS para estilizar um elemento específico. O valor deste atributo deve ser único.
+                </ul>
+                <br>
+                <dt id="atributos_globais">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes">Atributos globais</a>
+                </dt>
+                <dd>Atributos globais são atributos comuns a todos os elementos do HTML;<br> podem ser usados em todos os elementos, embora possam não ter efeito<br> em alguns elementos.</dd>
+                <h4>Exemplos</h4>
+                <ul>
+                    <li><strong>accesskey</strong></li> Fornece uma dica para gerar um atalho de teclado para o elemento atual.<br> Este atributo consiste em uma lista de caracteres separados por espaços.<br> O navegador deve usar o primeiro que existe no layout do teclado do computador.
+
+                    <li><strong>hidden</strong></li> Um atributo booleano indica que o elemento ainda não é relevante ou não é mais relevante.<br> Por exemplo, ele pode ser usado para ocultar elementos da página que não podem ser usados<br> até que o processo de login tenha sido concluído. O navegador não renderizará esses elementos.<br> Este atributo não deve ser usado para ocultar conteúdo que possa ser legível.
+
+                    <li><strong>class</strong></li> É uma lista separada por espaço das classes do elemento. as classes permitem ao CSS e ao JavaScript<br> selecionar e acessar elementos específicos atraves dos seletores de classe ou funciona como um método<br>
+                    <code><strong>Document.getElementsByClassName()</strong></code>.
+                </ul>
+                <br>
+                <dt id="tipos_de_links">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types">Tipos de links</a>
+                </dt>
+                <dd>
+                Em HTML, os tipos de links a seguir indicam o relacionamento entre dois documentos,<br> em que um aponta para o outro usando um elemento 
+                &lt;<code>a</code>&gt;
+                ,
+                &lt;<code>area</code>&gt;
+                ou
+                &lt;<code>link</code>&gt;
+                .
+                </dd>
+                <h4>Exemplos</h4>
+                <ul>
+                    <li><strong>external</strong></li> Indica que o hiperlink leva a um recurso fora do site da página atual; ou seja, seguir o link fará com que o usuário saia do site.
+
+                    <li><strong>nofollow</strong></li> Indica que o documento vinculado não é endossado pelo autor deste, por exemplo, se não tiver controle sobre ele,<br> se for um mau exemplo ou se houver relação comercial entre os dois (link vendido). Esse tipo de link pode ser usado<br> por alguns mecanismos de pesquisa que usam técnicas de classificação de popularidade.
+
+                    <li><strong>tag</strong></li> Indica que o hiperlink se refere a um documento que descreve uma marca que se aplica a este documento.<br><strong>Observação:</strong> esse tipo de link não deve ser definido em links para um membro de uma nuvem de tags, pois<br> eles não se aplicam a um único documento, mas a um conjunto de páginas
+                </ul>
+                <br>
+                <dt id="categorias_de_conteúdo">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/Content_categories">Categorias de conteúdo</a>
+                </dt>
+                <dd>
+                    Todo elemento em HTML é membro de uma ou mais categorias de conteúdo<br> — estas categorias agrupam elementos que compartilham características comuns.
+                </dd>
+            </dl>
+        </section>
+    </main>
    
 
 </div>
