@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
 
     <title>Prog Fácil</title>
-    <link rel="stylesheet" href="stylesheet.css"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css"/>
+    <link rel="stylesheet" href="pages.css">
     <link rel="shortcut icon" href="../img/shortcut icon.jpg"/>
     
 </head>
@@ -17,33 +19,33 @@
             <ul>
             <li class="listelemen"><a href="index.html">Home</a></li>
             <li class="listelemen"><a href="pg1.html">História HTML</a></li>
+            <li class="listelemen"><a href="pg10.html">Criador do HTML</a></li>
             <li class="listelemen"><a href="pg2.html">Documento HTML</a></li>
             <li class="listelemen"><a href="pg3.html">Pricipais TAGS HTML</a></li>
             <li class="listelemen"><a href="pg4.html">Referencias HTML</a></li>
             <li class="listelemen"><a href="pg5.html">História CSS</a></li>
             <li class="listelemen"><a href="pg6.html">Documento CSS</a></li>
             <li class="listelemen"><a href="pg7.html">Pricipais atributos CSS</a></li>
-            <li class="listelemen"><a href="pg8.html">Referencias CSS</a></li>
             <li class="listelemen"><a href="pg9.html">Contatos</a></li>
             </ul>
         </nav>
       
         </div>
 </header>
-<div style="margin: 100px; background-color: antiquewhite; margin-left: 10px; margin-right: 10px; height: 100%; ">
+<div class= "page" style="margin: 100px; background-color: rgb(255, 255, 255); margin-left: 10px; margin-right: 10px; height: 100%; ">
    
     <main>
         <section>
             <h1>Referência HTML</h1>
             <br>
-            <p>
+            <p class="p1">
                 Esta referência de
                 <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a>
                 descreve todos os
                 <strong>elementos</strong>
                 e
                 <strong>atributos</strong>
-                do HTML,<br> incluindo 
+                do HTML, incluindo 
                 <strong>Atributos globais</strong>
                 que se aplicam em todos os elementos.
             </p>
@@ -54,7 +56,7 @@
                 </dt>
                 <dd>Esta página lista todos os elementos do HTML que são criados usando tags.</dd>
                 <h4>Exemplos</h4>
-                <ul>
+                <ul class="ulcenter">
                     <li>&lt;<code><strong>base</strong></code>&gt;</li> O elemento HTML Base (&lt;base&gt;) especifica o endereço (URL) utilizada por<br> todos os endereços relativos contidos dentro de um documento.<br> Há um número máximo de 1 (um) elemento Base &lt;base&gt; do documento.
 
                     <li>&lt;<code><strong>head</strong></code>&gt;</li> O elemento HTML &lt;head&gt; providencia informações gerais (metadados) sobre<br> o documento, incluindo seu título e links para scripts e folhas de estilos.
@@ -67,7 +69,7 @@
                 </dt>
                 <dd>Os elementos do HTML contêm atributos, que são valores adicionais que configuram os<br> elementos ou ajustam seu comportamento de várias formas, para que se adaptem aos<br> critérios dos usuários.</dd>
                 <h4>Exemplos</h4>
-                <ul>
+                <ul class="ulcenter">
                     <li><strong>class</strong></li> Frequentemente usado com CSS para estilizar os elementos com propriedades comuns.
 
                     <li><strong>href</strong></li> A URL de um recurso ligado.
@@ -80,7 +82,7 @@
                 </dt>
                 <dd>Atributos globais são atributos comuns a todos os elementos do HTML;<br> podem ser usados em todos os elementos, embora possam não ter efeito<br> em alguns elementos.</dd>
                 <h4>Exemplos</h4>
-                <ul>
+                <ul class="ulcenter">
                     <li><strong>accesskey</strong></li> Fornece uma dica para gerar um atalho de teclado para o elemento atual.<br> Este atributo consiste em uma lista de caracteres separados por espaços.<br> O navegador deve usar o primeiro que existe no layout do teclado do computador.
 
                     <li><strong>hidden</strong></li> Um atributo booleano indica que o elemento ainda não é relevante ou não é mais relevante.<br> Por exemplo, ele pode ser usado para ocultar elementos da página que não podem ser usados<br> até que o processo de login tenha sido concluído. O navegador não renderizará esses elementos.<br> Este atributo não deve ser usado para ocultar conteúdo que possa ser legível.
@@ -102,7 +104,7 @@
                 .
                 </dd>
                 <h4>Exemplos</h4>
-                <ul>
+                <ul class="ulcenter">
                     <li><strong>external</strong></li> Indica que o hiperlink leva a um recurso fora do site da página atual; ou seja, seguir o link fará com que o usuário saia do site.
 
                     <li><strong>nofollow</strong></li> Indica que o documento vinculado não é endossado pelo autor deste, por exemplo, se não tiver controle sobre ele,<br> se for um mau exemplo ou se houver relação comercial entre os dois (link vendido). Esse tipo de link pode ser usado<br> por alguns mecanismos de pesquisa que usam técnicas de classificação de popularidade.

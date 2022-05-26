@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     
     <title>Prog Fácil</title>
-    <link rel="stylesheet" href="stylesheet.css"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css"/>
+    <link rel="stylesheet" href="pages.css">
     <link rel="shortcut icon" href="../img/shortcut icon.jpg"/>
    
 </head>
@@ -17,26 +19,26 @@
             <ul>
             <li class="listelemen"><a href="index.html">Home</a></li>
             <li class="listelemen"><a href="pg1.html">História HTML</a></li>
+            <li class="listelemen"><a href="pg10.html">Criador do HTML</a></li>
             <li class="listelemen"><a href="pg2.html">Documento HTML</a></li>
             <li class="listelemen"><a href="pg3.html">Pricipais TAGS HTML</a></li>
             <li class="listelemen"><a href="pg4.html">Referencias HTML</a></li>
             <li class="listelemen"><a href="pg5.html">História CSS</a></li>
             <li class="listelemen"><a href="pg6.html">Documento CSS</a></li>
             <li class="listelemen"><a href="pg7.html">Pricipais atributos CSS</a></li>
-            <li class="listelemen"><a href="pg8.html">Referencias CSS</a></li>
             <li class="listelemen"><a href="pg9.html">Contatos</a></li>
             </ul>
         </nav>
       
         </div>
 </header>
-<div style="margin: 100px; background-color: antiquewhite; margin-left: 10px; margin-right: 10px; height: 100%; ">
+<div class= "page" style="margin: 100px; background-color: rgb(255, 255, 255); margin-left: 10px; margin-right: 10px; height: 100%; ">
 
     <main>
         <section>
-            <h3>Entendendo os comandos e tags HTML5</h3>
+            <h1>Entendendo os comandos e tags HTML5</h1>
             <br>
-            <p>
+            <p class="p1">
                 <strong>
                     O HTML5 assim como qualquer outra linguagem ao ser atualizada, além de receber novo comandos, aposenta outros.<br>
                 </strong>
@@ -48,7 +50,7 @@
         <section>
             <h3>Tags Continuadas:</h3>
             <br>
-            <ul>
+            <ul class="ulcenter">
                 <li>
                     <strong>&lt;!--...--&gt;</strong> Define um comentário;
                 </li>
@@ -277,7 +279,7 @@
         <section>
             <h3>Tags Descontinuadas:</h3>
             <br>
-            <ul>
+            <ul class="ulcenter">
                 <li>
                     <strong>&lt;acronym&gt;</strong> Define siglas em HTML 4.01. (Desenvolvedores preferem utilizar a tag &lt;abbr&gt;);
                 </li>
@@ -323,34 +325,34 @@
             </ul>
             <br>
             <section>
-                <p>
-                    Se analisarmos bem as definições podemos perceber que muitas tags descontinuadas tiveram esse fim por já existirem tags que realizam a mesma função.<br> E ao utilizar o
+                <p class="p1">
+                    Se analisarmos bem as definições podemos perceber que muitas tags descontinuadas tiveram esse fim por já existirem tags que realizam a mesma função. E ao utilizar o
                     <strong>
                         HTML 5 você perceberá que algumas tags continuadas foram modificadas e passaram a exercer outras propriedades,
-                    </strong><br> fazendo, também, que outras tags percam valor.
+                    </strong> fazendo, também, que outras tags percam valor.
                 </p>
             </section>
         </section>
         <br>
         <article>
-            <p>
+            <p class="p1">
                 Nota 1: Você pode ouvir em algum lugar sobre HTML - ArqHP (Arquitetura de Home Pages). É o próprio HTML 5 com outra denominação e isso é apenas uma jogada de marketing.
             </p>
             <br>
-            <p>
-                Nota 2: Os <strong>HTML 1, HTML 2 , HTML 3 e o HTML 4 estão todos contidos no HTML 5</strong> e mesmo as tags descontinuadas não trazem nenhum problema de compatibilidade<br> com o HTML 5 e o contrário também ocorre, onde as novas tags também não trazem nenhum problema de compatibilidade com as versões antigas.
+            <p class="p1">
+                Nota 2: Os <strong>HTML 1, HTML 2 , HTML 3 e o HTML 4 estão todos contidos no HTML 5</strong> e mesmo as tags descontinuadas não trazem nenhum problema de compatibilidade com o HTML 5 e o contrário também ocorre, onde as novas tags também não trazem nenhum problema de compatibilidade com as versões antigas.
             </p>
         </article>
         <br>
         <section>
             <h3>HTML5 DOCTYPE e as Tags link e script</h3>
             <br>
-            <p>
+            <p class="p1">
                 A tag 
                 <b>&lt;DOCTYPE&gt;</b> é a primeira que aparece em um documento HTML e indica para o browser o tipo e versão do documento que está sendo aberto.
             </p>
             <br>
-            <p>
+            <p class="p1">
                 Na
                 <b>HTML5 o DOCTYPE</b> ficou mais simples, com relação à <b>HTML4.1.</b> Observe as listagens a seguir.
             </p>
@@ -360,22 +362,21 @@
             <figcaption>
                 <b>Listagem 1</b> HTML4.1 DOCTYPE:
                 <br>
-                <img src="/img/html4.1.png" alt="imagem 1">
+                <img class="img" src="../img/html4.1.png" alt="imagem 1">
             </figcaption>
         </figure>
         <br>
-        <p>Agora fica  apenas:</p>
-        <br>
-        <p>
+        <p class="p1">Agora fica  apenas:</p>
+        <p class="p1">
             <b>Listagem 2:</b>
             HTML5 DOCTYPE
         </p>
-        <br>
-        <p>
+        
+        <p class="p1">
             &lt;!DOCTYPE html&gt;
         </p>
         <br>
-        <p>
+        <p class="p1">
             Nas tags link e script, utilizadas para referenciar arquivos
             <b>CSS </b>
             e
@@ -387,7 +388,7 @@
             como era feito na HTML 4.1.
         </p>
         <br>
-        <p>
+        <p class="p1">
             As listagens a seguir mostram como eram essas tags na HTML4.1 e como são agora na HTML5.
         </p>
         <br>
@@ -395,21 +396,21 @@
             <figcaption>
                 <b>HTML4.1</b> LINK e SCRIPT
                 <br>
-                <img src="/img/html4.1_Link_E_Script.png" alt="imagem 2">
+                <img class="img" src="../img/html4.1_Link_E_Script.png" alt="imagem 2">
             </figcaption>
         </figure>
         <br>
-        <p>E agora, na HTML5:</p>
+        <p class="p1">E agora, na HTML5:</p>
         <br>
         <figure>
             <figcaption>
                 <b>Listagem 4:</b> HTML5 LINK e SCRIPT
                 <br>
-                <img src="/img/html5_link_e_script.png" alt="imagem 3">
+                <img class="img"  src="../img/html5_link_e_script.png" alt="imagem 3">
             </figcaption>
         </figure>
         <br>
-        <p>
+        <p class="p1">
             Como vimos, das principais tags utilizadas no cabeçalho do documento tiveram sua sintaxe simplificada, facilitando o aprendizado e agilizando o desenvolvimento.
         </p>
 
