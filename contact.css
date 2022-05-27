@@ -69,7 +69,7 @@ h2{
     width: 10%;
     background-color: rgb(182, 181, 181);
 }
-#box-devs{
+.box-devs{
    display: flex;
    border-top: 2px solid black;
 }
@@ -86,7 +86,7 @@ h2{
     justify-content: space-around;
     
 }
-#img-dev{
+.img-dev{
    
     width:30%;
     padding-bottom: 10px;
@@ -123,4 +123,16 @@ footer a{
     font-size: 20px;
     margin: 5px;
     color: white;
+}
+#section2{
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 890px) {
+    #section1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
 }
